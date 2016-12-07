@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  LocalizationDemo
+
+  Created by Loc Trinh on 12/7/16.
+  Copyright © 2016 Trinh Loc. All rights reserved.
+*/
+
+"Title"                                 = "Property";
+"Setting"                               = "Setting";
+"Detail"                                = "Detail";
+
+/// Detail
+"description"                           = "ISO 8601 Data elements and interchange formats – Information interchange – Representation of dates and times is an international standard covering the exchange of date and time-related data. It was issued by the International Organization for Standardization (ISO) and was first published in 1988. The purpose of this standard is to provide an unambiguous and well-defined method of representing dates and times, so as to avoid misinterpretation of numeric representations of dates and times, particularly when data are transferred between countries with different conventions for writing numeric dates and times";
+"TitleDetail"                           = "Detail";
+
+
+/// Setting
+"LangueDevie"                           = "Language";
+"labelLangueDevie"                      = "Code Languae";
+"TitleSetting"                          = "Setting";

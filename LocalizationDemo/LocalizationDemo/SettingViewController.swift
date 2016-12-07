@@ -12,19 +12,54 @@ import DLRadioButton
 class SettingViewController: UIViewController {
 
    
+    @IBOutlet weak var languageDevice: UILabel!
+    @IBOutlet weak var lbIosDevice: UILabel!
+    @IBOutlet weak var lblLanguage: UILabel!
     @IBOutlet weak var laguage: DLRadioButton!
+    let arrayLanguages = Localisator.sharedInstance.getArrayAvailableLanguages()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector:#selector(SettingViewController.receiveLanguageChangedNotification(notification:)), name: NSNotification.Name(rawValue: kNotificationLanguageChanged), object: nil)
+        
+    
+        
+        configureViewFromLocalisation()
     }
 
+    func configureViewFromLocalisation() {
+        self.navigationItem.title  = Localization(string: "Setting")
+        languageDevice.text = Localization(string: "LangueDevie")
+        lbIosDevice.text = Localization(string: "labelLangueDevie")
+        lblLanguage.text = Locale.current.languageCode //Localization(string: "Setting")
+    }
+    
+    // MARK: - Notification methods
+    
+    func receiveLanguageChangedNotification(notification:NSNotification) {
+        configureViewFromLocalisation()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func checked(_ sender: DLRadioButton) {
-        print( (laguage.selected()?.titleLabel?.text) as Any)
+
+        if let laguageSelected =  laguage.selected() {
+            if let value = laguageSelected.titleLabel?.text {
+                switch value {
+                case "English":
+                    let _ = SetLanguage(language: "en")
+                case "Vietnam":
+                    let _ = SetLanguage(language: "vn")
+                default:
+                    let _ = SetLanguage(language: "en")
+                    
+                }
+            }
+        }
 
     }
     

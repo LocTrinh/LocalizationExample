@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="o0i-dU-LRj">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="o0i-dU-LRj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Property-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocalizationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PropertyViewController" customModule="LocalizationDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -32,7 +32,7 @@
                                 <rect key="frame" x="167.5" y="368.5" width="40" height="30"/>
                                 <state key="normal" title="Detail"/>
                                 <connections>
-                                    <segue destination="0ov-fM-Ulf" kind="show" id="DBP-bq-9mU"/>
+                                    <segue destination="0ov-fM-Ulf" kind="show" id="Lv1-mX-oAl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,15 +45,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Property" id="Sa8-Z0-TJy"/>
+                    <connections>
+                        <outlet property="detail" destination="Sgl-hn-488" id="5X0-VJ-gIh"/>
+                        <outlet property="setting" destination="Db8-09-LgW" id="R49-xU-BfN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893.60000000000002" y="-722.78860569715152"/>
+            <point key="canvasLocation" x="633" y="-1179"/>
         </scene>
         <!--Detail-->
         <scene sceneID="dTL-7p-smf">
             <objects>
-                <viewController id="0ov-fM-Ulf" sceneMemberID="viewController">
+                <viewController id="0ov-fM-Ulf" customClass="ScreenDetailViewController" customModule="LocalizationDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A1a-mC-n6S"/>
                         <viewControllerLayoutGuide type="bottom" id="JK5-i4-FHS"/>
@@ -79,10 +83,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="3RE-YN-RUA"/>
+                    <connections>
+                        <outlet property="valueDesciption" destination="2Qh-JG-Bvo" id="KaU-07-ZF2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzS-HN-p6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1665" y="-519"/>
+            <point key="canvasLocation" x="1252" y="-380"/>
         </scene>
         <!--Setting-->
         <scene sceneID="jK4-sp-mFu">
@@ -161,6 +168,9 @@
                     <navigationItem key="navigationItem" title="Setting" id="dbB-nd-lWp"/>
                     <connections>
                         <outlet property="laguage" destination="Abc-ZI-cJT" id="Maf-3r-He5"/>
+                        <outlet property="languageDevice" destination="IrB-Dh-6cF" id="RP1-kA-jIS"/>
+                        <outlet property="lbIosDevice" destination="lWX-Im-eZ3" id="C5d-ff-qik"/>
+                        <outlet property="lblLanguage" destination="Z3u-c2-f3a" id="6Qg-41-4qh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYj-9V-93A" userLabel="First Responder" sceneMemberID="firstResponder"/>

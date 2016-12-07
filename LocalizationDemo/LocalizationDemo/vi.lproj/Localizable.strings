@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  LocalizationDemo
+
+  Created by Loc Trinh on 12/7/16.
+  Copyright © 2016 Trinh Loc. All rights reserved.
+*/
+
+"Title"                                 = "Thuộc Tính";
+"Setting"                               = "Cài Đặt";
+"Detail"                                = "Chi Tiết";
+
+/// Detail
+"description"                           = "SO 8601 yếu tố dữ liệu và định dạng trao đổi - Thông tin trao đổi - Đại diện của ngày và thời gian là một tiêu chuẩn quốc tế bao gồm việc trao đổi ngày tháng và thời gian dữ liệu liên quan. Nó đã được ban hành bởi Tổ chức tiêu chuẩn quốc tế (ISO) và đã được xuất bản lần đầu vào năm 1988. Mục đích của tiêu chuẩn này là để cung cấp một phương pháp rõ ràng và cũng xác định đại diện cho ngày tháng và thời gian, để tránh hiểu sai về các đại diện số của ngày và thời gian, đặc biệt là khi dữ liệu được chuyển giao giữa các nước với các công ước khác nhau để viết ngày số và thời gian";
+"TitleDetail"                           = "Chi Tiết";
+
+
+/// Setting
+"LangueDevie"                           = "Ngôn Ngũ";
+"labelLangueDevie"                      = "Code Ngôn Ngữ";
+"TitleSetting"                          = "Cài Đặt";

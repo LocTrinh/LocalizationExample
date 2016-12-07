@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "I prefer using the dateutil library for timezone handling and generally solid date parsing. If you were to get an ISO 8601 string like: 2010-05-08T23:41:54.000Z you'd have a fun time parsing that with strptime, especially if you didn't know up front whether or not the timezone was included. pyiso8601 has a couple of issues (check their tracker) that I ran into during my usage and it hasn't been updated in a few years. dateutil, by contrast, has been active and worked for me"; ObjectID = "2Qh-JG-Bvo"; */
+"2Qh-JG-Bvo.text" = "I prefer using the dateutil library for timezone handling and generally solid date parsing. If you were to get an ISO 8601 string like: 2010-05-08T23:41:54.000Z you'd have a fun time parsing that with strptime, especially if you didn't know up front whether or not the timezone was included. pyiso8601 has a couple of issues (check their tracker) that I ran into during my usage and it hasn't been updated in a few years. dateutil, by contrast, has been active and worked for me";
+
+/* Class = "UINavigationItem"; title = "Detail"; ObjectID = "3RE-YN-RUA"; */
+"3RE-YN-RUA.title" = "Detail";
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "Abc-ZI-cJT"; */
+"Abc-ZI-cJT.normalTitle" = "English";
+
+/* Class = "UIButton"; normalTitle = "Setting"; ObjectID = "Db8-09-LgW"; */
+"Db8-09-LgW.normalTitle" = "Setting";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "IrB-Dh-6cF"; */
+"IrB-Dh-6cF.text" = "Language";
+
+/* Class = "UINavigationItem"; title = "Property"; ObjectID = "Sa8-Z0-TJy"; */
+"Sa8-Z0-TJy.title" = "Property";
+
+/* Class = "UIButton"; normalTitle = "Detail"; ObjectID = "Sgl-hn-488"; */
+"Sgl-hn-488.normalTitle" = "Detail";
+
+/* Class = "UILabel"; text = "Languague"; ObjectID = "Z3u-c2-f3a"; */
+"Z3u-c2-f3a.text" = "Languague";
+
+/* Class = "UINavigationItem"; title = "Setting"; ObjectID = "dbB-nd-lWp"; */
+"dbB-nd-lWp.title" = "Setting";
+
+/* Class = "UILabel"; text = "iOs Device"; ObjectID = "lWX-Im-eZ3"; */
+"lWX-Im-eZ3.text" = "iOs Device";
+
+/* Class = "UIButton"; normalTitle = "Vietnam"; ObjectID = "sZM-pH-1d7"; */
+"sZM-pH-1d7.normalTitle" = "Vietnam";
