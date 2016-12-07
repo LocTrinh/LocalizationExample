@@ -24,7 +24,7 @@ class Localisator {
     // MARK: - Private properties
     
     private let userDefaults                    = UserDefaults.standard
-    private var availableLanguagesArray         = ["DeviceLanguage", "en", "vn"]
+    private var availableLanguagesArray         = ["DeviceLanguage", "en", "vi"]
     private var dicoLocalisation:NSDictionary!
     
     
@@ -80,7 +80,6 @@ class Localisator {
     
     private func loadDictionaryForLanguage(_ newLanguage:String) -> Bool {
         
-        //let arrayExt = newLanguage.components(separatedBy: "_")
         if let path = Bundle(for:object_getClass(self)).url(forResource: "Localizable", withExtension: "strings", subdirectory: nil, localization: newLanguage)?.path {
             if FileManager.default.fileExists(atPath: path) {
                 currentLanguage = newLanguage
@@ -88,6 +87,7 @@ class Localisator {
                 return true
             }
         }
+        
         return false
     }
     

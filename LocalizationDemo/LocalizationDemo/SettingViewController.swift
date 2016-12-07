@@ -29,9 +29,9 @@ class SettingViewController: UIViewController {
 
     func configureViewFromLocalisation() {
         self.navigationItem.title  = Localization(string: "Setting")
-        languageDevice.text = Localization(string: "LangueDevie")
+        languageDevice.text = Locale.current.languageCode
         lbIosDevice.text = Localization(string: "labelLangueDevie")
-        lblLanguage.text = Locale.current.languageCode //Localization(string: "Setting")
+        lblLanguage.text =  Localization(string: "LangueDevie")//Localization(string: "Setting")
     }
     
     // MARK: - Notification methods
@@ -53,7 +53,7 @@ class SettingViewController: UIViewController {
                 case "English":
                     let _ = SetLanguage(language: "en")
                 case "Vietnam":
-                    let _ = SetLanguage(language: "vn")
+                    let _ = SetLanguage(language: "vi")
                 default:
                     let _ = SetLanguage(language: "en")
                     
