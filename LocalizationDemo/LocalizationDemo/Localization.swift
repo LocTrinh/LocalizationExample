@@ -32,7 +32,7 @@ class Localisator {
     
     // MARK: - Public properties
     
-    var currentLanguage                         = "DeviceLanguage"
+    public var currentLanguage                         = "DeviceLanguage"
     
     // MARK: - Public computed properties
     

@@ -19,7 +19,6 @@ class SettingViewController: UIViewController {
     let arrayLanguages = Localisator.sharedInstance.getArrayAvailableLanguages()
     override func viewDidLoad() {
         super.viewDidLoad()
-
         NotificationCenter.default.addObserver(self, selector:#selector(SettingViewController.receiveLanguageChangedNotification(notification:)), name: NSNotification.Name(rawValue: kNotificationLanguageChanged), object: nil)
         
     
@@ -28,6 +27,13 @@ class SettingViewController: UIViewController {
     }
 
     func configureViewFromLocalisation() {
+        let current = Localisator.sharedInstance.currentLanguage
+        if (current == "vi") {
+            laguage.otherButtons[0].isSelected = true
+        } else {
+            laguage.isSelected = true
+        }
+        
         self.navigationItem.title  = Localization(string: "Setting")
         languageDevice.text = Locale.current.languageCode
         lbIosDevice.text = Localization(string: "labelLangueDevie")
